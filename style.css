@@ -10,6 +10,9 @@ body {
 .flex-container{
     display: flex;
     background-color: #f4f4f4;
+    justify-content: space-between; /* along the main axis */
+    height: 400px;
+    align-items: center; /* along the cross axis */
 }
 .item{
     width: 100px;
@@ -17,4 +20,15 @@ body {
     background: #254de4;
     color: #fff;
     margin: 10px;
+}
+.item:nth-of-type(1) {
+    align-self: start;
+}
+
+.item:nth-of-type(2) {
+    align-self: center;
+}
+
+.item:nth-of-type(3) {
+    align-self: end;
 }
