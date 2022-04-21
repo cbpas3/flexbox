@@ -12,6 +12,7 @@ body {
     background-color: #f4f4f4;
     /*justify-content: space-between; /* along the main axis */
     /* align-items: center; /* along the cross axis */
+    flex-wrap:wrap;
 }
 .item{
     width: 100px;
