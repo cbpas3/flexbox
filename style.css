@@ -12,10 +12,11 @@ body {
     background-color: #f4f4f4;
     /*justify-content: space-between; /* along the main axis */
     /* align-items: center; /* along the cross axis */
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
 }
 .item{
-    width: 100px;
+    /* flex-basis: 300px; /* works along side flex-grow/flex-shrink as the basis if the browser is small/big enough. Won't go smaller/bigger than this*/
+    flex: 1 0 100px; /* grow shrink basis */
     height:100px;
     background: #254de4;
     color: #fff;
@@ -23,15 +24,20 @@ body {
     display:flex;
     justify-content:center;
     align-items: center;
+    
 }
 .item:nth-of-type(1) {
-   
+   /* order:2; */
+   /* flex-shrink: 1; */
 }
 
 .item:nth-of-type(2) {
-
+    /* order: 1; */
+    /* flex-basis: 200px; */
+    /* flex-shrink:2; */
 }
 
 .item:nth-of-type(3) {
-
+    /* order: 3; */
+    /* flex-shrink:1; */
 }
